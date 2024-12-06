@@ -1,0 +1,38 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; /* Светлый фон */
+  }
+  
+  .card-custom {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .btn-primary {
+    width: 96px;
+    height: 44px;
+    background-color: #4F46E5;
+    border-color: #4F46E5;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .form-control{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0 0 0 100px;
+    width: 370px;
+    height: 44px;
+  }

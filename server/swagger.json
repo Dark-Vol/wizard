@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Wizard API",
+        "version": "1.0.0",
+        "description": "API для обработки данных визарда"
+    },
+    "paths": {
+        "/api/wizard": {
+            "post": {
+            "summary": "Сохранение данных визарда и отправка email",
+            "requestBody": {
+                "required": true,
+                "content": {
+                "application/json": {
+                    "schema": {
+                    "type": "object",
+                    "properties": {
+                        "name": { "type": "string" },
+                        "email": { "type": "string" },
+                        "phone": { "type": "string" },
+                        "quantity": { "type": "integer" }
+                    },
+                    "required": ["name", "email", "quantity"]
+                    }
+                }
+                }
+            },
+            "responses": {
+                "200": {
+                    "description": "Данные успешно сохранены и email отправлен"
+                },
+                "500": {
+                    "description": "Ошибка при обработке данных"
+                }
+            }
+            }
+        }
+    }
+}
